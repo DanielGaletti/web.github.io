@@ -578,7 +578,16 @@
     <div id="video">
         <iframe width="470" height="273" src="https://www.youtube.com/embed/HxGt_3F0ULg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
+    
+    <a href="https://help.gympass.com/hc/en-us/requests/new?ticket_form_id=360004793573&contactreason=Gyms" onClick=goForm()><button>Meu Botão</button></a>
 
+    <script>
+    function goForm(){
+    console.log("a");
+    window.history.pushState({ prevUrl: window.location.href }, null, "https://help.gympass.com/hc/en-us/requests/new?ticket_form_id=360004793573")
+    }
+    </script>
+    
     <div id="console">
         <span class="consoletext">$ npm install express --save</span>
     </div>
